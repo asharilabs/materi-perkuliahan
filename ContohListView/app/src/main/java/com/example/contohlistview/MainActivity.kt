@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 //        _listview.adapter = ArrayAdapter(
 //            this, android.R.layout.simple_list_item_1, namanama
 //        )
-        _listview.adapter = AdapterBuatanKita(this, namanama, fotofoto, posisi)
+        _listview.adapter = AdapterBuatanKita(this, namanama, posisi, fotofoto)
 
         // 3. aksi untuk item yang ada di listview jika diklik
         // parameter i--> digunakan untuk mapping index dari item yang diklik
