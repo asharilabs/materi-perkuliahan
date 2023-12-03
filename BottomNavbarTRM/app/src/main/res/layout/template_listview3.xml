@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/layout3_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/beckham"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/layout3_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beckham Putra"
+                android:textSize="20sp"
+                android:textColor="#0000ff"
+                android:layout_marginLeft="30dp"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:id="@+id/layout3_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Deskripsi Pemain Deskripsi Pemain Deskripsi Pemain Deskripsi Pemain Deskripsi Pemain Deskripsi Pemain "
+                android:singleLine="false"
+                android:textSize="14sp"
+                android:textColor="#0000ff"
+                android:layout_marginLeft="30dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

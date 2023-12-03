@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.bottomnavbartrm"
+    namespace = "com.example.contohlistviewdetail"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.bottomnavbartrm"
+        applicationId = "com.example.contohlistviewdetail"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -37,9 +37,6 @@ android {
 
 dependencies {
 
-//    implementation ("com.github.ibrahimsn98:SmoothBottomBar:1.0")
-    implementation ("de.hdodenhof:circleimageview:3.1.0")
-    implementation ("com.airbnb.android:lottie:3.4.0")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")

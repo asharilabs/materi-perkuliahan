@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- User Profile Image -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/persib"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/image"
+        android:layout_alignTop="@id/image"/>
+
+    <!-- Post Image -->
+    <ImageView
+        android:id="@+id/postimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/image"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ciro"/>
+
+    <!-- Like Button -->
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_like"
+        android:layout_below="@id/postimage"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Comment Button -->
+    <ImageView
+        android:id="@+id/comment"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_insert_comment_24"
+        android:layout_below="@id/postimage"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/like"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Share Button -->
+    <ImageView
+        android:id="@+id/sharebutton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_share"
+        android:layout_below="@id/postimage"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
