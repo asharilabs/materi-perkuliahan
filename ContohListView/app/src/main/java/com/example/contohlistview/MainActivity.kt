@@ -13,6 +13,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // POSISI
+        var posisi = arrayOf<String>(
+            "Penjaga Gawang", 
+            "Belakang", 
+            "Belakang", 
+            "Belakang", 
+            "Belakang", 
+            "Tengah",
+            "Tengah",
+            "Tengah",
+            "Tengah",
+            "Depan",
+            "Depan"
+            )
         // DATA
         var namanama = arrayOf<String>(
             "Teja Paku Alam",
@@ -48,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 //        _listview.adapter = ArrayAdapter(
 //            this, android.R.layout.simple_list_item_1, namanama
 //        )
-        _listview.adapter = AdapterBuatanKita(this, namanama, fotofoto)
+        _listview.adapter = AdapterBuatanKita(this, namanama, posisi, fotofoto)
 
         // 3. aksi untuk item yang ada di listview jika diklik
         // parameter i--> digunakan untuk mapping index dari item yang diklik
